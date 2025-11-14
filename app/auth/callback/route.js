@@ -1,7 +1,5 @@
-import { createClient } from '../../../lib/supabase'
+import { supabase } from '../../../lib/supabase'
 import { NextResponse } from 'next/server'
-
-// ... rest of the code remains the same
 
 export async function GET(request) {
   const requestUrl = new URL(request.url)
@@ -9,7 +7,6 @@ export async function GET(request) {
   const next = requestUrl.searchParams.get('next') || '/dashboard'
 
   if (code) {
-    const supabase = createClient()
     const { error } = await supabase.auth.exchangeCodeForSession(code)
     
     if (!error) {
