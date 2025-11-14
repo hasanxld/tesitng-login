@@ -1,6 +1,8 @@
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-import { createClient } from '@/lib/supabase'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
+import { createClient } from '../../lib/supabase'
+
+// ... rest of the code remains the same
 
 export default async function About() {
   const supabase = createClient()
