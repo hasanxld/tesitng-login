@@ -1,5 +1,7 @@
-import { createClient } from '@/lib/supabase'
+import { createClient } from '../../../lib/supabase'
 import { NextResponse } from 'next/server'
+
+// ... rest of the code remains the same
 
 export async function GET(request) {
   const requestUrl = new URL(request.url)
