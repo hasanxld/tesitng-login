@@ -1,9 +1,8 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import { createClient } from '../lib/supabase'
+import { supabase } from '../lib/supabase'
 
 export default async function Home() {
-  const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
 
   return (
@@ -107,4 +106,4 @@ export default async function Home() {
       <Footer />
     </div>
   )
-                  }
+}
