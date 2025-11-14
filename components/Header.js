@@ -1,7 +1,9 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
-import { supabase } from '@/lib/supabase'
+import { supabase } from '../lib/supabase'
+
+// ... rest of the code remains the same
 
 export default function Header({ user }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
