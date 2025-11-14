@@ -1,9 +1,9 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { supabase } from '@/lib/supabase'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import { supabase } from '../../lib/supabase'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 
 export default function Dashboard() {
   const [user, setUser] = useState(null)
