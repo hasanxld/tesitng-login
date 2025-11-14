@@ -3,8 +3,6 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { supabase } from '../lib/supabase'
 
-// ... rest of the code remains the same
-
 export default function Header({ user }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
@@ -171,4 +169,4 @@ export default function Header({ user }) {
       )}
     </>
   )
-    }
+}
